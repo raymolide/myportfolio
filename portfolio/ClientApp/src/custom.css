@@ -1,0 +1,88 @@
+/* Provide sufficient contrast against white background */
+
+ 
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.presentation > p, button{
+    font-size: 30px; 
+    position: relative;
+    animation-name: apresentacao;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+ p{
+     overflow-wrap:break-word;
+ }
+
+span {
+    color: #1b6ec2; 
+    font-weight: bold;
+    font-size: 30px;
+}
+
+ 
+.card {
+    background-image:url('/ClientApp/src/components/splash.jpg');
+    border-radius: 10px; 
+    height: 500px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.foto > img {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    position: relative;
+    animation-name: apresentacaoFoto;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+ 
+
+@media screen and (max-width: 500px) {
+          
+    img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+.presentation { 
+    height: 350px;
+    justify-self: center;
+    align-self: center;
+}
+
+ 
+
+@keyframes apresentacaoFoto {
+    0% {
+        width:  0%;
+        height: 0px;
+        
+    }
+
+    100% {
+        width: 350px;
+        height: 350px;
+    }
+}
+
